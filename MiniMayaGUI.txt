@@ -1,0 +1,25 @@
+HOW TO USE THE GUI:
+A default 5x5 mesh is already provided for you as well as a selected vertex.
+- 	To make a new mesh, simply input its size into the input boxs at the top. "Rows" and
+"Cols" represent how many quads are in the mesh. The "Unit Width" and "Unit Height"
+input boxes define how big a single quad unit is. Click "Create Mesh" after typing in 
+the values you want.
+-	The color of the mesh can be changed by useing the three colored sliders under
+the "Create Mesh" button.
+-	You can also change the camera's position by using the "wasd" keys, or by clicking
+on one for the buttons under "View"
+-	To select another vertex, click on the arrow-buttons below "Select Vertex". This
+will cycle through all the verticies. The currently selected vertex will be surrounded by
+a small maroon box, so that it's easy to spot. You can change its height, as well as the
+snowcap color height, with the sliders below.
+-	The "No. of Subivisions" input box and button do nothing at the moment, unfortunately. 
+
+DIFFICULTIES:
+	I had the hardest time figuring out how to draw the mesh. Using classes for Face, 
+Edge, and Vertex, I took forever creating a mesh-creation algorithm through trial and error.
+That is literally what took all of my time. In the end, I managed to finish everything 
+except any of the smoothing/fractalizing methods. 
+
+KNOWN ERRORS:
+	From what I was able to test, there aren't any big errors. The snowcap level can sometimes seem
+like it's not working, but it is! 

@@ -1,0 +1,119 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0303 
+header_name {.h} 
+code_name {.cxx}
+class TreeView {open
+} {
+  Function {TreeView()} {open
+  } {
+    Fl_Window {} {open
+      xywh {307 61 753 503} type Single color 14 visible
+    } {
+      Fl_Group {} {
+        label {Select Vertex} open
+        xywh {500 351 130 44}
+      } {
+        Fl_Button {} {
+          label {<-}
+          xywh {525 355 40 30}
+        }
+        Fl_Button {} {
+          label {->}
+          xywh {565 355 40 30}
+        }
+      }
+      Fl_Group {} {
+        label {Snowcap Height} open
+        xywh {510 472 260 28}
+      } {
+        Fl_Slider {} {
+          xywh {520 476 230 24} type Horizontal
+        }
+      }
+      Fl_Group {} {
+        label {Mesh Color} open
+        xywh {545 151 190 79}
+      } {
+        Fl_Slider {} {
+          xywh {546 153 189 20} type Horizontal color 88
+        }
+        Fl_Slider {} {
+          xywh {546 173 189 20} type Horizontal color 102
+        }
+        Fl_Slider {} {
+          xywh {546 193 189 21} type Horizontal color 4
+        }
+      }
+      Fl_Group {} {open
+        xywh {10 9 500 500} labeltype NO_LABEL
+      } {
+        Fl_Box {} {
+          label tView
+          xywh {10 9 500 500} box FLAT_BOX
+          code0 {\#include <FL/Fl_TREE.H>}
+        }
+      }
+      Fl_Group {} {open
+        xywh {530 10 195 105}
+      } {
+        Fl_Input {} {
+          label Rows
+          xywh {575 16 35 28}
+        }
+        Fl_Input {} {
+          label Cols
+          xywh {575 44 35 28}
+        }
+        Fl_Button {} {
+          label {Create Mesh}
+          xywh {585 84 100 30}
+        }
+        Fl_Input {} {
+          label {Unit Width}
+          xywh {687 15 35 28}
+        }
+        Fl_Input {} {
+          label {Unit Height}
+          xywh {687 43 35 28}
+        }
+      }
+      Fl_Button {} {
+        label {Toggle Wireframe}
+        xywh {620 255 125 30}
+      }
+      Fl_Group {} {
+        label Views open
+        xywh {505 250 95 85}
+      } {
+        Fl_Button {} {
+          label Top
+          xywh {525 290 60 30}
+        }
+        Fl_Button {} {
+          label Side
+          xywh {525 255 60 30}
+        }
+      }
+      Fl_Group {} {
+        label {Vertex Height} open
+        xywh {510 422 260 28}
+      } {
+        Fl_Slider {} {
+          xywh {520 426 230 24} type Horizontal
+        }
+      }
+      Fl_Group {} {
+        label {No. of Subdivisions} open selected
+        xywh {625 331 125 64}
+      } {
+        Fl_Value_Input {} {
+          xywh {670 336 35 28} labeltype NO_LABEL
+        }
+        Fl_Button {} {
+          label {Fractalize!}
+          xywh {649 370 80 25}
+        }
+      }
+    }
+  }
+} 
